@@ -12,7 +12,6 @@ import random
 from google.oauth2 import service_account
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import google.auth.transport.requests
 from google.oauth2.service_account import Credentials
 import google.oauth2.credentials
 import imaplib
@@ -30,7 +29,7 @@ password = os.getenv("USER_APP_PASSWORD")
 sender = os.getenv("MAIL_SENDER")
 # receive_email = 'winterpeas@gmail.com'
 # receive_email= "sunnie.gpsh@gmail.com"
-receive_email= "ladayodeji@gmail.com"
+receive_email= os.getenv("THIRD_PARTY_ADDRESS")
 
 #  IMAP server conf
 imap_ssl_host = 'imap.gmail.com'
@@ -279,5 +278,5 @@ def update_sheet(spreadsheet_list, values):
 
 if __name__ == "__main__":
     sheet_list= get_spreadsheet()
-    values= [['B-009875', 709], ['B-89765', 634], ['B-098765', 789]] # [[Deal 1], [Deal 2], [Deal 3]]
+    values= [['B-109875', 709], ['B-82765', 634], ['B-028765', 789]] # [[Deal 1], [Deal 2], [Deal 3]]
     update_sheet(sheet_list, values= values)
