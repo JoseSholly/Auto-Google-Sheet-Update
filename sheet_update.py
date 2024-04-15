@@ -279,5 +279,5 @@ def update_sheet(spreadsheet_list, values):
 
 if __name__ == "__main__":
     sheet_list= get_spreadsheet()
-    values= [['B-22456', 239], ['B-644321', 634], ['B-967060', 129]] # [[Deal 1], [Deal 2], [Deal 3]]
+    values= [['B-009875', 709], ['B-89765', 634], ['B-098765', 789]] # [[Deal 1], [Deal 2], [Deal 3]]
     update_sheet(sheet_list, values= values)
