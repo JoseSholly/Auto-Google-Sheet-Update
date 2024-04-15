@@ -273,6 +273,7 @@ def update_sheet(spreadsheet_list, values):
     except Exception as e:
         print(f"An error occurred: {e}")
     stop_time= time.perf_counter()
+    time.sleep(10)
     print(f"Update Completed in {stop_time - start_time:.2f} seconds")
 
 
