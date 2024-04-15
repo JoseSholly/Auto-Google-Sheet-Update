@@ -281,6 +281,6 @@ if __name__ == "__main__":
     sheet_list= get_spreadsheet()
       # [[Deal 1], [Deal 2], [Deal 3]]
 
-    values= [['B-109875', 709], ['B-82765', 634], ['B-028765', 789]]
+    values= [['B-123456', 709], ['B-567890', 634], ['B-058765', 789]]
    
     update_sheet(sheet_list, values= values)
