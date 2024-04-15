@@ -279,11 +279,8 @@ def update_sheet(spreadsheet_list, values):
 
 if __name__ == "__main__":
     sheet_list= get_spreadsheet()
-    with open("input.txt", 'r') as file:
-        file_contents = file.read()
+      # [[Deal 1], [Deal 2], [Deal 3]]
 
-    # [[Deal 1], [Deal 2], [Deal 3]]
-
-    # values= [['B-109875', 709], ['B-82765', 634], ['B-028765', 789]] 
-    values= file_contents
+    values= [['B-109875', 709], ['B-82765', 634], ['B-028765', 789]]
+   
     update_sheet(sheet_list, values= values)

@@ -55,16 +55,11 @@ pip install -r requirements.txt
 - Click on "Create" to create the service account.
 - Assign a Editor role to your service account to grant it the necessary permissions.
 
-## 4. Generate and Download the Service Account Key (JSON)
+#### 4. Generate and Download the Service Account Key (JSON)
 - Find the newly created service account in the list and click on the three-dot menu icon.
 - Select "Manage keys" > "Add key" > "Create new key".
 - Choose the key type as JSON and click on "Create". This will download a JSON file containing your service account credentials.
 - Add credentials to *cred* `folder and save as *service_acct_cred.json*
-
-### Input data
-- Open *input.txt* and input data
-- Input the BFMR-ID and Total Claimed for each deals into inner list
-- **[[BFMR-ID, Total Claimed], [BFMR-ID , Total Claimed], [BFMR-ID , Total Claimed]]**
 
 
 ### Run the Script
