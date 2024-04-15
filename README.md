@@ -9,7 +9,7 @@ This Python project demonstrates how to automate updates to a Google Spreadsheet
 Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/yourusername/google-sheets-automation.git
+git clone https://github.com/JoseSholly/Auto-Google-Sheet-Update.git
 cd google-sheets-automation
 ```
 ### Set Up Virtual Environment (venv)
