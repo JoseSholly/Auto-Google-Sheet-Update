@@ -19,6 +19,7 @@ import email
 import os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
+from google.auth.exceptions import RefreshError
 
 load_dotenv()  # take environment variables from .env.
 
@@ -30,6 +31,9 @@ sender = os.getenv("MAIL_SENDER")
 # receive_email = 'winterpeas@gmail.com'
 # receive_email= "sunnie.gpsh@gmail.com"
 receive_email= os.getenv("THIRD_PARTY_ADDRESS")
+
+# Path to Service account credentials JSON file
+service_acct_cred= os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 #  IMAP server conf
 imap_ssl_host = 'imap.gmail.com'
@@ -192,6 +196,8 @@ def update_sheet(spreadsheet_list, values):
         
         credentials = Credentials.from_service_account_file(os.getenv("GOOGLE_APPLICATION_CREDENTIALS"),
                                                             scopes= SCOPES)
+    
+        
         sheet_count+=1
         
         print(f"Updating Mail id:{id}: Received on {date}")
